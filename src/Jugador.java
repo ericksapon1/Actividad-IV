@@ -49,6 +49,11 @@ public class Jugador {
         cartas.add(carta);
     }
 
+    public void sumarPuntos(int puntos) {
+        this.punteo += puntos;
+    }
+
+
     public Cartas jugarCarta(){
         Random random = new Random();
         int indiceCarta = random.nextInt(cartas.size());
